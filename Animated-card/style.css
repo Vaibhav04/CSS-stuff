@@ -1,0 +1,89 @@
+* {
+     box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+     outline: none;
+}
+
+:root {
+     font-size: 62.5%;
+     font-family: "Roboto", sans-serif;
+     color: white;
+}
+
+body {
+     background: linear-gradient(135deg, rgba(85, 239, 196, 0.2), rgb(0, 184, 148, 0.2));
+}
+
+.container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     height: 100%;
+     width: 90%;
+     margin: 0 auto;
+     padding: 1rem;
+}
+
+.card {
+     display: flex;
+     flex-direction: column;
+     padding: 2rem;
+     justify-content: space-between;
+     background-color: white;
+     border-radius: 1rem;
+     margin-top: 2rem;
+
+     height: 40rem;
+     width: 40rem;
+
+     background: linear-gradient(#55efc4, rgb(0, 184, 148));
+
+     transition: all 0.5s ease-in;
+     margin-right: 1rem;
+}
+
+.card:hover {
+     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15), 2rem 2rem 2rem rgba(0, 0, 0, 0.15),
+          4rem 4rem 4rem rgba(0, 0, 0, 0.15), 8rem 8rem 8rem rgba(0, 0, 0, 0.15);
+}
+
+.card--title,
+.card--title,
+.card--link {
+     letter-spacing: 0.1rem;
+}
+.card--title {
+     font-size: 5rem;
+     text-align: center;
+     font-weight: 100;
+     justify-self: start;
+     text-transform: capitalize;
+}
+
+.card--para {
+     font-weight: 300;
+     font-size: 2rem;
+}
+.card--link:link,
+.card--link:visited {
+     padding: 0.7rem 1.5rem;
+     align-self: flex-start;
+     font-size: 1.5rem;
+
+     transition: all ease-in 0.5s;
+
+     border: 0.1rem solid white;
+     border-radius: 2rem;
+
+     font-weight: 300;
+}
+
+.card--link:hover,
+.card--link:active {
+     color: #55efc4;
+     background-color: white;
+}
